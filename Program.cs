@@ -6,8 +6,12 @@ namespace Part_5._5___Intro_To_Methods
     {
         static void Main(string[] args)
         {
+            int i = 1;
+            while (i <= 10)
+            {
             Console.WriteLine("Enter 1 for a joke, 2 for a dolphin, 3 for a rabbit, 4 for a horse, or 5 for a knock knock joke.");
-            int menuInput = Convert.ToInt32(Console.ReadLine());
+            int menuInput;
+            while (!int.TryParse(Console.ReadLine(), out menuInput));
             if (menuInput == 1)
             {
                 Console.WriteLine("Enter a starting number of bottles");
@@ -37,6 +41,8 @@ namespace Part_5._5___Intro_To_Methods
                 Console.ReadLine();
                 Thread.Sleep(1000);
                 KnockKnock();
+            }
+                i = i + 2;
             }
         }
         public static void Joke(int numBugs)
