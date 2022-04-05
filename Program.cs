@@ -20,22 +20,22 @@ namespace Part_5._5___Intro_To_Methods
                 Console.ReadLine();
                 Joke(startingBottles);
             }
-            if (menuInput == 2)
+            else if (menuInput == 2)
             {
                 Thread.Sleep(1000);
                 Dolphin();
             }
-            if (menuInput == 3)
+            else if (menuInput == 3)
             {
                 Thread.Sleep(1000);
                 Rabbit();
             }
-            if (menuInput == 4)
+            else if (menuInput == 4)
             {
                 Thread.Sleep(1000);
                 Horse();
             }
-            if (menuInput == 5)
+            else if (menuInput == 5)
             {
                 Console.WriteLine("Press ENTER for a knock knock joke.");
                 Console.ReadLine();
